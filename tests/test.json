@@ -1,13 +1,16 @@
 {
   "kind": "OperatorUnitTest",
   "name": "test",
-  "namespace": "ds0",
-  "inputDataUri": "crabs-long.csv",
-  "outputDataUri": ["table1.csv","table2.csv","table3.csv"],
-  "columns": ["sex"],
-  "rows": ["variable"],
+  "namespace": "ds00",
+  "inputDataUri": "test_in.csv",
+  "outputDataUri": ["test_out_1.csv", "test_out_2.csv"],
+  "columns": [],
+  "rows": ["Variable"],
   "colors": [],
   "labels": [],
-  "yAxis": "measurement",
-  "xAxis": ""
+  "yAxis": "y_values",
+  "xAxis": "",
+  "generatedOn": "06/30/2022 05:50:16 PM 2022",
+  "version": "",
+  "relTol": 1e-05
 }

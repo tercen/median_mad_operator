@@ -1,11 +1,24 @@
-library(tercen)
-library(dplyr, warn.conflicts = FALSE)
+suppressPackageStartupMessages({
+  library(tercen)
+  library(dplyr)
+  library(data.table)
+})
 
-ctx = tercenCtx()
+ctx <- tercenCtx()
 
-ctx %>%
-  select(.y, .ci, .ri) %>% 
-  group_by(.ci, .ri) %>%
-  summarise(mean = mean(.y)) %>%
+df <- ctx %>% 
+  select(.y, .ci, .ri) %>%
+  as.data.table()
+
+df[,{
+    med <- median(.y)
+    list(
+      median = med,
+      mad = median(abs(.y - med))
+    )  
+  },
+   by = .(.ci, .ri)
+] %>%
+  as_tibble() %>%
   ctx$addNamespace() %>%
   ctx$save()

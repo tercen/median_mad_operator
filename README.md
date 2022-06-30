@@ -1,50 +1,26 @@
-# Template R operator
-
-The `Template R operator` is a template repository for the creation of R operators in Tercen. An overview of steps for developing an operator are:
-
-1. create a github repo
-2. install tercen_studio
-3. login to tercen_studio
-4. git clone the newly created repo
-5. start developing in R in tercen_studio
-6. add R packages to the repo
-7. push to the github repo
-8. go to tercen and install the operator
-
-More information can be found in the [Tercen developer's guide](https://tercen.github.io/developers_guide/).
-
-Below is the operator README standard structure:
+# Median and MAD
 
 ##### Description
 
-The `Template R operator` is a template repository for the creation of R operators in Tercen.
+The `Median and MAD operator` computes the median and Median Absolute Deviation (MAD) of the data points in a cell.
 
 ##### Usage
 
 Input projection|.
 ---|---
-`x-axis`        | type, description 
-`y-axis`        | type, description 
-`row`           | type, description 
-`column`        | type, description 
-`colors`        | type, description 
-`labels`        | type, description 
-
-Input parameters|.
----|---
-`input_var`        | parameter description
+`y-axis`        | numeric, measurement 
 
 Output relations|.
 ---|---
-`output_var`        | output relation
-`Operator view`        | view of the Shiny application
+`median`    | median, per cell
+`mad`        | median absolute deviation, per cell
 
 ##### Details
 
-Details on the computation.
+[Median Absolute Deviation Wikipedia page](https://en.wikipedia.org/wiki/Median_absolute_deviation)
 
 ##### See Also
 
-[template_shiny_operator](https://github.com/tercen/template_shiny_operator)
-, [template_docker_operator](https://github.com/tercen/template_docker_operator)
+[mean_operator](https://github.com/tercen/mean_operator)
+, [mean_sd_operator](https://github.com/tercen/mean_sd_operator)
 
