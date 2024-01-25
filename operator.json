@@ -1,10 +1,14 @@
 {
   "name": "Median and MAD",
   "description": "Compute the median and Median Absolute Deviation (MAD) of the data points in a cell.",
-  "tags": ["basic statistics"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/median_mad_operator"],
+  "tags": [
+    "descriptive statistics"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/median_mad_operator"
+  ],
   "properties": []
 }
-
-
