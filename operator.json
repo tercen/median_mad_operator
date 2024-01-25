@@ -1,6 +1,6 @@
 {
   "name": "Median and MAD",
-  "description": "Compute the median and Median Absolute Deviation (MAD) of the data points in a cell.",
+  "description": "Computes the median and Median Absolute Deviation (MAD) of the data points in a cell.",
   "tags": [
     "descriptive statistics"
   ],
